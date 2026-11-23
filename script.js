@@ -26,9 +26,10 @@ function loadVideo() {
     message.textContent = 'Link inválido. Cole um link de arquivo do Google Drive ou o ID do vídeo.';
     return;
   }
-  player.src = `https://drive.google.com/file/d/${encodeURIComponent(id)}/preview`;
   player.hidden = false;
   emptyState.hidden = true;
+  player.src = `https://drive.google.com/file/d/${encodeURIComponent(id)}/preview`;
+  message.textContent = 'Vídeo carregado. Se não aparecer, confira o compartilhamento do Drive e tente abrir o link de teste em outra aba.';
 }
 function clearVideo() {
   player.src = '';
