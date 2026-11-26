@@ -15,7 +15,6 @@
       <div><h1>Drive<span>Player</span></h1><p>Seu vídeo, em uma tela só.</p></div>
     </header>
 
-<!-- Opção 1: Colar qualquer link -->
     <section class="panel">
       <label for="driveLink">Link compartilhado do Google Drive</label>
       <div class="input-row">
@@ -25,17 +24,6 @@
       <p class="hint">O arquivo precisa estar compartilhado como <strong>Qualquer pessoa com o link</strong>.</p>
       <p id="message" class="message" role="status" aria-live="polite"></p>
     </section>
-
-    <!-- Opção 2: Vídeo fixo com clique direto -->
-    <section class="panel">
-      <label for="fixedDriveLink">Vídeo pré-definido</label>
-      <div class="input-row">
-        <input id="fixedDriveLink" type="url" value="https://drive.google.com/file/d/111ehkwNMD_NjmJk5nzRvakMV5NmEor2F/view?usp=drivesdk" readonly>
-        <button id="playFixedBtn" type="button">▶ Reproduzir</button>
-      </div>
-      <p class="hint">Clique direto para carregar o vídeo configurado.</p>
-    </section>
-
 
     <section class="player-wrap" aria-label="Reprodutor de vídeo">
       <div id="emptyState" class="empty-state">
